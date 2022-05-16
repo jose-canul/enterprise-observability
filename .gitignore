@@ -1,0 +1,12 @@
+# IntelliJ files
+**/.idea/*
+
+# Terraform Directories
+**/.terraform/*
+
+# Terraform State Files
+*.tfstate
+*.tfstate.*
+
+# Terraform Lock Files
+*.lock.hcl
