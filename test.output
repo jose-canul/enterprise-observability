@@ -1,0 +1,37 @@
+map[
+dnsSettings:map[
+    appliedDnsServers:[]
+    dnsServers:[]
+    internalDomainNameSuffix:tilp0libu5qudpfrzawzd35orb.gx.internal.cloudapp.net
+]
+enableAcceleratedNetworking:false
+enableIPForwarding:false
+hostedWorkloads:[]
+ipConfigurations:[
+    map[
+        etag:W/"1f2450ab-9bac-4cba-9285-49abc203796e"
+        id:/subscriptions/45f40345-1e96-44dc-aed2-317f1568c1dd/resourceGroups/three-tier-rg/providers/Microsoft.Network/networkInterfaces/three-tier-data-nic/ipConfigurations/three-tier-data-ip
+        name:three-tier-data-ip
+        properties:map[
+            primary:true
+            privateIPAddress:10.0.2.4
+            privateIPAddressVersion:IPv4
+            privateIPAllocationMethod:Dynamic
+            provisioningState:Succeeded
+            subnet:map[
+                id:/subscriptions/45f40345-1e96-44dc-aed2-317f1568c1dd/resourceGroups/three-tier-rg/providers/Microsoft.Network/virtualNetworks/three-tier-network/subnets/three-tier-logic-subnet
+            ]
+        ]
+        type:Microsoft.Network/networkInterfaces/ipConfigurations
+    ]
+]
+macAddress:00-0D-3A-3F-B0-70
+nicType:Standard
+primary:true
+provisioningState:Succeeded
+resourceGuid:c3a28d70-ed7e-4b47-877b-22f7fe1a9f9e
+tapConfigurations:[]
+virtualMachine:map[
+    id:/subscriptions/45f40345-1e96-44dc-aed2-317f1568c1dd/resourceGroups/three-tier-rg/providers/Microsoft.Compute/virtualMachines/three-tier-data-machine
+]
+vnetEncryptionSupported:false]
