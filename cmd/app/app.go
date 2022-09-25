@@ -136,7 +136,7 @@ func Run() {
 			sub := db.Resource{Id: resource.SubscriptionId, Name: resource.SubscriptionId}
 			rel := db.Relationship{Name: "CONTAINS"}
 
-			//fmt.Printf("Processing %v - %v -> %v\n", sub.Id, rel, rss1.Id)
+			fmt.Printf("Processing %v - %v -> %v\n", sub.Id, rel, rss1.Id)
 
 			err := db.InsertRelationship(driver, sub, rel, rss1)
 			if err != nil {
@@ -149,7 +149,7 @@ func Run() {
 			rel := db.Relationship{Name: "MANAGED_BY"}
 			rss2 := db.Resource{Id: resource.ManagedBy}
 
-			//fmt.Printf("Processing %v - %v -> %v\n", rss1.Id, rel, rss2.Id)
+			fmt.Printf("Processing %v - %v -> %v\n", rss1.Id, rel, rss2.Id)
 
 			err := db.InsertRelationship(driver, rss1, rel, rss2)
 			if err != nil {
@@ -164,7 +164,7 @@ func Run() {
 				rel := db.Relationship{Name: "HAS"}
 				rss2 := db.Resource{Id: nic.ID}
 
-				//fmt.Printf("Processing %v - %v -> %v\n", rss1.Id, rel, rss2.Id)
+				fmt.Printf("Processing %v - %v -> %v\n", rss1.Id, rel, rss2.Id)
 
 				err := db.InsertRelationship(driver, rss1, rel, rss2)
 				if err != nil {
@@ -183,7 +183,7 @@ func Run() {
 				rel := db.Relationship{Name: "CONTAINS"}
 				subnet := db.Resource{Id: sub.ID, Name: sub.Name}
 
-				//fmt.Printf("Processing %v - %v -> %v\n", vnet.Id, rel, subnet.Id)
+				fmt.Printf("Processing %v - %v -> %v\n", vnet.Id, rel, subnet.Id)
 
 				err = db.InsertRelationship(driver, vnet, rel, subnet)
 				if err != nil {
